@@ -29,8 +29,6 @@ class FirstFragment : Fragment() {
             val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment()
             Navigation.findNavController(it).navigate(action)
         }
-
-
     }
 
 }
