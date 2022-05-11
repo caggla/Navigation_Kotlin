@@ -26,7 +26,8 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         first_fragment_button.setOnClickListener{
-            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment()
+            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(40)
+            //action.age=40  **age gelmediği için yukarıda constructor olarak tanımladık.
             Navigation.findNavController(it).navigate(action)
         }
     }
